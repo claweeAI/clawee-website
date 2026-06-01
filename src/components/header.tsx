@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { SITE, NAV_ITEMS, CTA } from "@/data/site";
+import { SITE, NAV_ITEMS } from "@/data/site";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -35,14 +35,6 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <a
-            href={SITE.lineUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-surface shadow-sm transition-colors hover:bg-primary-dark"
-          >
-            {CTA.sectionLine}
-          </a>
         </nav>
 
         {/* Mobile hamburger */}
@@ -77,15 +69,6 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <a
-              href={SITE.lineUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 inline-block rounded-lg bg-primary px-4 py-2.5 text-center text-sm font-semibold text-surface transition-colors hover:bg-primary-dark"
-              onClick={() => setOpen(false)}
-            >
-              {CTA.sectionLine}
-            </a>
           </nav>
         </div>
       )}

@@ -32,10 +32,10 @@ export const NAV_ITEMS = [
 // ========== CTA 文案集中管理 ==========
 
 export const CTA = {
-  heroLine: "加入 LINE 諮詢",
+  heroLine: "LINE 免費諮詢",
   heroSecondary: "看看我們做什麼",
-  sectionLine: "免費 LINE 諮詢",
-  contactLine: "加入 LINE 開始洽談",
+  sectionLine: "LINE 免費諮詢",
+  contactLine: "免費 LINE 諮詢",
   services: "了解更多",
 } as const;
 

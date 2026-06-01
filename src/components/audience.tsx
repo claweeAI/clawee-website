@@ -1,4 +1,4 @@
-import { TARGET_AUDIENCE, SITE, CTA } from "@/data/site";
+import { TARGET_AUDIENCE } from "@/data/site";
 
 export function Audience() {
   return (
@@ -31,19 +31,8 @@ export function Audience() {
         {/* CTA */}
         <div className="mt-10 text-center">
           <p className="text-sm text-text-muted">
-            有被說中嗎？別猶豫，加 LINE 我們先聊聊。
+            有被說中嗎？歡迎找我們聊聊。
           </p>
-          <a
-            href={SITE.lineUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-surface shadow-md transition-all hover:bg-primary-dark"
-          >
-            {CTA.sectionLine}
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </a>
         </div>
       </div>
     </section>

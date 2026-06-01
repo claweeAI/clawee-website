@@ -1,4 +1,4 @@
-import { PAIN_POINTS, SITE, CTA } from "@/data/site";
+import { PAIN_POINTS } from "@/data/site";
 
 export function PainPoints() {
   return (
@@ -33,17 +33,6 @@ export function PainPoints() {
           <p className="text-sm text-text-muted">
             有中任何一項？我們可以幫你解決。
           </p>
-          <a
-            href={SITE.lineUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-surface shadow-md transition-all hover:bg-primary-dark"
-          >
-            {CTA.sectionLine}
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </a>
         </div>
       </div>
     </section>
