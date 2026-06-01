@@ -22,8 +22,8 @@ export function Hero() {
 
         {/* 一句話解釋我們幫誰解決什麼問題 */}
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-text-muted sm:text-xl">
-          我們協助中小企業與個人工作者導入 AI Agent、自動化流程與內部系統。
-          不用懂程式，也能讓 AI 幫你處理報表、開發客戶、整理文件。
+          我們提供 AI Agent 導入、自動化流程設計與內部系統開發等顧問服務。
+          不用懂程式，我們會幫你找到 AI 真正能幫上忙的地方。
         </p>
 
         {/* 信任信號 */}

@@ -10,7 +10,7 @@ export const SITE = {
   name: "Clawee AI 工作室",
   tagline: "讓 AI 不只是聊天，而是開始替你工作",
   metaDescription:
-    "Clawee AI 工作室協助台灣中小企業與個人工作者導入 AI Agent、自動化流程與內部系統。不用懂程式，也能讓 AI 幫你處理報表、開發客戶、整理文件。",
+    "Clawee AI 工作室提供 AI Agent 導入、自動化流程設計與內部系統開發等顧問服務，協助台灣中小企業與個人工作者找到 AI 真正能幫上忙的地方。",
   url: "https://clawee.ai",
   email: "clawee.ai@gmail.com",
   lineId: "@410wabnt",
