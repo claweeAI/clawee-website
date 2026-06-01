@@ -21,6 +21,7 @@ export const SITE = {
 // ========== 導航選單 ==========
 
 export const NAV_ITEMS = [
+  { label: "免費健檢", href: "/free-ai-audit" },
   { label: "服務方案", href: "#services" },
   { label: "應用案例", href: "#cases" },
   { label: "AI 家教", href: "#ai-tutoring" },

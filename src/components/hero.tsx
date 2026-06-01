@@ -62,10 +62,10 @@ export function Hero() {
             {CTA.heroLine}
           </a>
           <Link
-            href="#services"
-            className="flex w-full items-center justify-center gap-2 rounded-xl border border-border bg-white px-8 py-3.5 text-base font-semibold text-text transition-all hover:border-primary hover:text-primary sm:w-auto sm:px-10 sm:py-4"
+            href="/free-ai-audit"
+            className="flex w-full items-center justify-center gap-2 rounded-xl border-2 border-primary/30 bg-white px-8 py-3.5 text-base font-semibold text-primary transition-all hover:border-primary hover:bg-primary/5 sm:w-auto sm:px-10 sm:py-4"
           >
-            {CTA.heroSecondary}
+            🔍 免費 AI 流程健檢
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>

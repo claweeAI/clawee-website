@@ -156,9 +156,12 @@ src/
 │   ├── ai-tutoring.tsx    # AI 家教教學獨立區塊
 │   ├── use-cases.tsx      # 應用案例
 │   ├── audience.tsx       # 適合對象
+│   ├── audit-cta.tsx      # 免費 AI 流程健檢 CTA 區塊
+│   ├── audit-form.tsx     # 免費 AI 流程健檢表單元件
 │   ├── contact.tsx        # 聯絡我們 + 諮詢流程
 │   └── footer.tsx         # 頁尾
 └── data/
+    ├── freeAiAudit.ts     # 免費 AI 流程健檢表單設定（欄位、選項、文案）
     └── site.ts            # ⭐ 所有可編輯的網站內容（唯一）
 ```
 
