@@ -3,11 +3,11 @@ import { SITE, CTA } from "@/data/site";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-surface-muted via-white to-blue-50">
-      {/* 幾何網格背景 */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:24px_24px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_40%,black,transparent)]" />
+    <section className="relative overflow-hidden bg-gradient-to-br from-surface via-[#0c1225] to-surface-muted">
+      {/* 幾何網格背景 — 暗色版 */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_40%,black,transparent)]" />
       <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-primary/5 blur-3xl" />
-      <div className="absolute -bottom-32 -left-32 h-72 w-72 rounded-full bg-accent/5 blur-3xl" />
+      <div className="absolute -bottom-32 -left-32 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
 
       <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 pb-24 pt-20 text-center sm:px-6 sm:pt-28 lg:px-8">
         {/* 品牌標籤 */}
@@ -26,7 +26,7 @@ export function Hero() {
           不用懂程式，也能讓 AI 幫你處理報表、開發客戶、整理文件。
         </p>
 
-        {/* 信任信號 — 解決三項不安 */}
+        {/* 信任信號 */}
         <div className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-text-muted">
           <span className="flex items-center gap-1.5">
             <svg className="h-4 w-4 shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -54,7 +54,7 @@ export function Hero() {
             href={SITE.lineUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex w-full items-center justify-center gap-2.5 rounded-xl bg-primary px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary-dark hover:shadow-xl hover:shadow-primary/30 sm:w-auto sm:px-10 sm:py-4 sm:text-lg"
+            className="flex w-full items-center justify-center gap-2.5 rounded-xl bg-primary px-8 py-3.5 text-base font-semibold text-surface shadow-lg shadow-primary/20 transition-all hover:bg-primary-dark hover:shadow-xl hover:shadow-primary/25 sm:w-auto sm:px-10 sm:py-4 sm:text-lg"
           >
             <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M22.14 0H1.86A1.86 1.86 0 000 1.86v14.14a1.86 1.86 0 001.86 1.86h3.72v5.28a.7.7 0 001.12.56l6.46-5.84h8.98A1.86 1.86 0 0024 16V1.86A1.86 1.86 0 0022.14 0z" />
@@ -63,7 +63,7 @@ export function Hero() {
           </a>
           <Link
             href="/free-ai-audit"
-            className="flex w-full items-center justify-center gap-2 rounded-xl border-2 border-primary/30 bg-white px-8 py-3.5 text-base font-semibold text-primary transition-all hover:border-primary hover:bg-primary/5 sm:w-auto sm:px-10 sm:py-4"
+            className="flex w-full items-center justify-center gap-2 rounded-xl border-2 border-primary/40 bg-surface-card px-8 py-3.5 text-base font-semibold text-primary transition-all hover:border-primary hover:bg-primary/10 sm:w-auto sm:px-10 sm:py-4"
           >
             🔍 免費 AI 流程健檢
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

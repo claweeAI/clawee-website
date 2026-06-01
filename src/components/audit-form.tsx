@@ -30,7 +30,6 @@ export function AuditForm() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
-    // 檢查必填
     const missing = FREE_AI_AUDIT.fields
       .filter((f) => f.required)
       .some((f) => {
@@ -46,7 +45,6 @@ export function AuditForm() {
       return;
     }
 
-    // Console 輸出 (未來串接後端用)
     console.log("=== AI 流程健檢表單送出 ===");
     for (const field of FREE_AI_AUDIT.fields) {
       const val = formData[field.id];
@@ -60,7 +58,7 @@ export function AuditForm() {
   if (submitted) {
     return (
       <div className="text-center py-12">
-        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-3xl">
+        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/15 text-3xl">
           ✅
         </div>
         <p className="mt-6 text-lg font-semibold text-text">
@@ -71,7 +69,7 @@ export function AuditForm() {
             href={SITE.lineUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-primary-dark"
+            className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-surface shadow-sm transition-all hover:bg-primary-dark"
           >
             {FREE_AI_AUDIT.ctaLine}
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -105,7 +103,7 @@ export function AuditForm() {
                   placeholder={field.placeholder}
                   value={(formData[field.id] as string) || ""}
                   onChange={(e) => handleChange(field.id, e.target.value, field.type)}
-                  className="w-full rounded-xl border border-border bg-surface-muted px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20"
+                  className="w-full rounded-xl border border-border bg-surface-muted px-4 py-3 text-sm text-text outline-none transition-colors placeholder:text-text-dim focus:border-primary focus:ring-2 focus:ring-primary/20"
                 />
               ) : (
                 <textarea
@@ -113,7 +111,7 @@ export function AuditForm() {
                   placeholder={field.placeholder}
                   value={(formData[field.id] as string) || ""}
                   onChange={(e) => handleChange(field.id, e.target.value, field.type)}
-                  className="w-full rounded-xl border border-border bg-surface-muted px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20"
+                  className="w-full rounded-xl border border-border bg-surface-muted px-4 py-3 text-sm text-text outline-none transition-colors placeholder:text-text-dim focus:border-primary focus:ring-2 focus:ring-primary/20"
                 />
               )}
             </>
@@ -127,8 +125,8 @@ export function AuditForm() {
                   key={opt}
                   className={`flex cursor-pointer items-center gap-3 rounded-xl border px-4 py-3 text-sm transition-all ${
                     formData[field.id] === opt
-                      ? "border-primary bg-primary/5 ring-1 ring-primary/20"
-                      : "border-border hover:border-primary/30"
+                      ? "border-primary bg-primary/10 ring-1 ring-primary/30"
+                      : "border-border bg-surface-muted hover:border-primary/40"
                   }`}
                 >
                   <input
@@ -139,7 +137,7 @@ export function AuditForm() {
                     onChange={(e) => handleChange(field.id, e.target.value, "radio")}
                     className="h-4 w-4 accent-primary"
                   />
-                  {opt}
+                  <span className="text-text">{opt}</span>
                 </label>
               ))}
             </div>
@@ -155,8 +153,8 @@ export function AuditForm() {
                     key={opt}
                     className={`flex cursor-pointer items-center gap-3 rounded-xl border px-4 py-3 text-sm transition-all ${
                       checked
-                        ? "border-primary bg-primary/5 ring-1 ring-primary/20"
-                        : "border-border hover:border-primary/30"
+                        ? "border-primary bg-primary/10 ring-1 ring-primary/30"
+                        : "border-border bg-surface-muted hover:border-primary/40"
                     }`}
                   >
                     <input
@@ -166,7 +164,7 @@ export function AuditForm() {
                       onChange={(e) => handleChange(field.id, e.target.value, "checkbox")}
                       className="h-4 w-4 accent-primary"
                     />
-                    {opt}
+                    <span className="text-text">{opt}</span>
                   </label>
                 );
               })}
@@ -178,12 +176,12 @@ export function AuditForm() {
       {/* Submit */}
       <button
         type="submit"
-        className="w-full rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-primary-dark"
+        className="w-full rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-surface shadow-sm transition-all hover:bg-primary-dark"
       >
         送出評估
       </button>
 
-      <p className="text-center text-xs text-text-muted">
+      <p className="text-center text-xs text-text-dim">
         送出後不需登入，約 1～2 個工作天內我們會主動聯繫你
       </p>
     </form>

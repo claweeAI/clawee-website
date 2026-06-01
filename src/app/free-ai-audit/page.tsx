@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function FreeAiAuditPage() {
   return (
-    <main className="min-h-screen bg-surface-muted">
+    <main className="min-h-screen bg-surface">
       {/* Header spacers */}
       <div className="h-16" />
 
@@ -32,11 +32,11 @@ export default function FreeAiAuditPage() {
           </div>
 
           {/* 表單 */}
-          <div className="mt-10 rounded-2xl border border-border bg-white p-6 shadow-sm sm:p-8">
+          <div className="mt-10 rounded-2xl border border-border bg-surface-card p-6 shadow-sm sm:p-8">
             <AuditForm />
           </div>
 
-          {/* 表單下方的 LINE 提示 */}
+          {/* 下方的 LINE 提示 */}
           <div className="mt-8 text-center text-sm text-text-muted">
             也可以直接加 LINE 聊聊 →
             <a

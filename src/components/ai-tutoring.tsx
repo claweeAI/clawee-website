@@ -46,7 +46,7 @@ const PRICING_TIERS = [
 
 export function AiTutoring() {
   return (
-    <section id="ai-tutoring" className="bg-white py-20 sm:py-28">
+    <section id="ai-tutoring" className="bg-surface py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* 標題 */}
         <div className="text-center">
@@ -70,7 +70,7 @@ export function AiTutoring() {
             {TUTORING_SCENARIOS.map((s) => (
               <div
                 key={s.title}
-                className="rounded-xl border border-border bg-surface-muted p-5 transition-all hover:border-primary/30 hover:shadow-md"
+                className="rounded-xl border border-border bg-surface-card p-5 transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5"
               >
                 <h4 className="font-semibold">{s.title}</h4>
                 <p className="mt-2 text-sm leading-relaxed text-text-muted">{s.desc}</p>
@@ -88,10 +88,10 @@ export function AiTutoring() {
             {PRICING_TIERS.map((tier) => (
               <div
                 key={tier.name}
-                className="relative flex flex-col rounded-2xl border border-border bg-white p-6 shadow-sm transition-all hover:shadow-md sm:p-8"
+                className="relative flex flex-col rounded-2xl border border-border bg-surface-card p-6 shadow-sm transition-all hover:shadow-lg hover:shadow-primary/5 sm:p-8"
               >
                 {tier.badge && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-4 py-1 text-xs font-semibold text-white">
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-4 py-1 text-xs font-semibold text-surface">
                     {tier.badge}
                   </span>
                 )}
@@ -118,7 +118,7 @@ export function AiTutoring() {
             href={SITE.lineUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-primary-dark"
+            className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-surface shadow-sm transition-all hover:bg-primary-dark"
           >
             {CTA.contactLine}
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

@@ -17,7 +17,7 @@ export function Services() {
           {SERVICE_PLANS.map((plan) => (
             <div
               key={plan.title}
-              className="flex flex-col rounded-2xl border border-border bg-white p-6 transition-all hover:border-primary/30 hover:shadow-lg sm:p-8"
+              className="flex flex-col rounded-2xl border border-border bg-surface-card p-6 transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 sm:p-8"
             >
               {/* 圖示 + 標題 */}
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-3xl">
@@ -43,12 +43,12 @@ export function Services() {
 
               {/* 適合對象 */}
               <div className="mt-6 border-t border-border pt-4">
-                <p className="text-xs font-semibold uppercase tracking-wider text-text-muted">適合</p>
+                <p className="text-xs font-semibold uppercase tracking-wider text-text-dim">適合</p>
                 <div className="mt-2 flex flex-wrap gap-2">
                   {plan.suitable.map((s) => (
                     <span
                       key={s}
-                      className="rounded-full bg-primary/5 px-3 py-1 text-xs text-primary"
+                      className="rounded-full bg-primary/10 px-3 py-1 text-xs text-primary"
                     >
                       {s}
                     </span>
@@ -62,7 +62,7 @@ export function Services() {
                   href={SITE.lineUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-full items-center justify-center gap-2 rounded-xl border border-primary bg-white px-4 py-3 text-sm font-semibold text-primary transition-all hover:bg-primary hover:text-white"
+                  className="flex w-full items-center justify-center gap-2 rounded-xl border border-primary/50 bg-surface-card px-4 py-3 text-sm font-semibold text-primary transition-all hover:bg-primary hover:text-surface"
                 >
                   {CTA.sectionLine}
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

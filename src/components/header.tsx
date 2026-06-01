@@ -9,7 +9,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-white/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-surface/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="#" className="flex items-center gap-2.5 text-xl font-bold tracking-tight">
@@ -39,7 +39,7 @@ export function Header() {
             href={SITE.lineUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-primary-dark"
+            className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-surface shadow-sm transition-colors hover:bg-primary-dark"
           >
             {CTA.sectionLine}
           </a>
@@ -65,7 +65,7 @@ export function Header() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="border-t border-border bg-white px-4 pb-4 pt-2 md:hidden">
+        <div className="border-t border-border bg-surface-card px-4 pb-4 pt-2 md:hidden">
           <nav className="flex flex-col gap-3">
             {NAV_ITEMS.map((item) => (
               <Link
@@ -81,7 +81,7 @@ export function Header() {
               href={SITE.lineUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-block rounded-lg bg-primary px-4 py-2.5 text-center text-sm font-semibold text-white transition-colors hover:bg-primary-dark"
+              className="mt-2 inline-block rounded-lg bg-primary px-4 py-2.5 text-center text-sm font-semibold text-surface transition-colors hover:bg-primary-dark"
               onClick={() => setOpen(false)}
             >
               {CTA.sectionLine}
