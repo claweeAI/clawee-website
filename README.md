@@ -1,6 +1,6 @@
 # Clawee AI 工作室 — 官方網站
 
-Clawee AI 工作室的形象網站。展示 AI Agent 部署、自動化流程設計與企業 AI 導入服務，讓潛在客戶透過 LINE 聯繫我們。
+Clawee AI 工作室的形象網站。展示 AI Agent 部署、自動化流程設計、AI 家教教學與企業 AI 導入服務，讓潛在客戶透過 LINE 聯繫我們。
 
 ## 技術棧
 
@@ -64,6 +64,10 @@ email: "clawee.ai@gmail.com",
 | `description` | 詳細說明 |
 | `features` | 特色列表 |
 | `suitable` | 適合對象標籤 |
+
+### 修改 AI 家教教學區塊
+
+在 `src/components/ai-tutoring.tsx` 中修改教學項目或收費方案。
 
 ### 修改應用案例
 
@@ -148,7 +152,8 @@ src/
 │   ├── header.tsx         # 導覽列
 │   ├── hero.tsx           # Hero 區塊
 │   ├── pain-points.tsx    # 痛點區塊
-│   ├── services.tsx       # 三大服務方案
+│   ├── services.tsx       # 四大服務方案
+│   ├── ai-tutoring.tsx    # AI 家教教學獨立區塊
 │   ├── use-cases.tsx      # 應用案例
 │   ├── audience.tsx       # 適合對象
 │   ├── contact.tsx        # 聯絡我們 + 諮詢流程
@@ -161,11 +166,6 @@ src/
 
 ## 部署
 
-```bash
-npm run build
-```
+已透過 Vercel 自動部署。每次 push 到 `main` 分支就會自動建置上線。
 
-產出在 `.next/` 目錄。可部署到：
-
-- **Vercel**（推薦，免費）：直接連接 GitHub 自動部署
-- **自架伺服器**：`npm start`（需 Node.js）
+自訂網域：**clawee.co**（DNS 指向 76.76.21.21）

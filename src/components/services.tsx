@@ -8,7 +8,7 @@ export function Services() {
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">服務方案</h2>
           <p className="mt-4 text-lg text-text-muted">
-            三種方案，從顧問到實作，把你的 AI 想法落地成真正能用的東西
+            四種方案，從顧問到實作到教學，找到最適合你的 AI 導入方式
           </p>
         </div>
 
