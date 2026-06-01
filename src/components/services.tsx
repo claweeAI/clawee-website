@@ -1,4 +1,4 @@
-import { SERVICE_PLANS, SITE, CTA } from "@/data/site";
+import { SERVICE_PLANS } from "@/data/site";
 
 export function Services() {
   return (
@@ -54,21 +54,6 @@ export function Services() {
                     </span>
                   ))}
                 </div>
-              </div>
-
-              {/* CTA */}
-              <div className="mt-auto pt-6">
-                <a
-                  href={SITE.lineUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex w-full items-center justify-center gap-2 rounded-xl border border-primary/50 bg-surface-card px-4 py-3 text-sm font-semibold text-primary transition-all hover:bg-primary hover:text-surface"
-                >
-                  {CTA.sectionLine}
-                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </a>
               </div>
             </div>
           ))}
