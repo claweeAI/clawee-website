@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SITE, CTA } from "@/data/site";
 import { FREE_AI_AUDIT } from "@/data/freeAiAudit";
 import { AuditForm } from "@/components/audit-form";
@@ -15,6 +16,19 @@ export default function FreeAiAuditPage() {
     <main className="min-h-screen bg-surface">
       {/* Header spacers */}
       <div className="h-16" />
+
+      {/* 返回按鈕 */}
+      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 pt-4">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-1.5 text-sm text-text-muted transition-colors hover:text-primary"
+        >
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+          回首頁
+        </Link>
+      </div>
 
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
