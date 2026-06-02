@@ -5,4 +5,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-// Last deployed: 2026-06-02 13:43
